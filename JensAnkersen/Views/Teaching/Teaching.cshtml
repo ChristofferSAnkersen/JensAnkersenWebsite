@@ -1,6 +1,6 @@
 ﻿@model ControllerName
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Undervisning";
     string controllerstring = "";
     if (!String.IsNullOrWhiteSpace(Model.ControllerString))
     {
@@ -9,8 +9,9 @@
 }
 
 <div class="text-center">
-    <h1 class="display-3">Jeg tilbyder</h1>
+    <h1 class="display-3">@ViewData["Title"]</h1>
 </div>
+
 <body>
     <div>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br />
@@ -72,5 +73,6 @@
     </div>
 </body>
 <div class="text-center">
-    <a> @Html.ActionLink("Tilbage til toppen", "Index", controllerstring, null, null, "BackToTop", null, null)</a>
+    <a> @Html.ActionLink("Tilbage til toppen", "Teaching", controllerstring, null, null, "BackToTop", null, null) | </a>
+    <a> @Html.ActionLink("Tilbage til forsiden", "Index", "Home", null, null, "BackToTop", null, null) </a>
 </div>

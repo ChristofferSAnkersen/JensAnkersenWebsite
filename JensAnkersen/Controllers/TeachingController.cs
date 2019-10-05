@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JensAnkersen.Controllers
 {
-    public class TherapyController : Controller
+    public class TeachingController : Controller
     {
-        public IActionResult Therapy()
+        public IActionResult Teaching()
         {
             // Use this to set the name of the controller to use to-top functions
             string controllerName = this.ControllerContext.RouteData.Values["controller"].ToString();

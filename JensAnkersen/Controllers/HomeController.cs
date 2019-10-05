@@ -20,7 +20,12 @@ namespace JensAnkersen.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            string controllerName = this.ControllerContext.RouteData.Values["controller"].ToString();
+            if (!String.IsNullOrWhiteSpace(controllerName))
+            {
+                return View(new ControllerName() { ControllerString = controllerName }); 
+            }
+            return View(new ControllerName());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

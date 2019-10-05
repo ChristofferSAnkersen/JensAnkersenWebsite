@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JensAnkersen.Controllers
 {
-    public class TherapyController : Controller
+    public class PrivacyController : Controller
     {
-        public IActionResult Therapy()
+        public IActionResult Privacy()
         {
             // Use this to set the name of the controller to use to-top functions
             string controllerName = this.ControllerContext.RouteData.Values["controller"].ToString();
