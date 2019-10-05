@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jens Ankersen - Psykoterapeut i Odense</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light border-bottom-0">
+            <div class="container justify-content-center">
+                <a class="navbar-brand text-center" asp-area="" asp-controller="Home" asp-action="Index">
+                    Jens Ankersen<br />
+                    Terapi og organisationskonsultation på systemisk og narrativt grundlag
+                </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1 justify-content-sm-around">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Terapi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Organisations udvikling</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Supervision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Undervisning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Mere</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <img class="img" src="@Url.Content("~/images/sunimage.jpg")" />
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+        <a @Url.
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; @DateTime.Now.Year -
+            Jens Ankersen -
+            <a asp-area="" asp-controller="Contact" asp-action="Index">Kontakt mig</a> -
+            <a asp-area="" asp-controller="Prices" asp-action="Index">Honorar</a> -
+            <a asp-area="" asp-controller="Privacy" asp-action="Index">Privatlivspolitik</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
