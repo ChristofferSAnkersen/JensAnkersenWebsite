@@ -7,6 +7,52 @@ for details on configuring this project to bundle and minify static web assets. 
     background-size: 100% 100%;
 }
 
+.col-md-4 {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    flex: 0 0 25%;
+    height: 100%;
+
+}
+
+.row {
+    height: 250px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.subjectbox {
+    height: 100%;
+    width: 100%;
+    color: white;
+    border-width: 5px;
+    border-color: goldenrod;
+    font-size: xx-large;
+}
+
+#therapybutton {
+    background-image: url("/images/SunsetImage.jpg");
+    
+}
+
+#supervisionbutton {
+    background-image: url("/images/SunsetImage.jpg");
+}
+
+#organizationbutton {
+    background-image: url("/images/SunsetImage.jpg");
+}
+
+#teachingbutton {
+    background-image: url("/images/SunsetImage.jpg");
+}
+
+.bd-placeholder-img {
+    
+}
+
 /*Fix border colors*/
 .border-top {
     border-color: black;
