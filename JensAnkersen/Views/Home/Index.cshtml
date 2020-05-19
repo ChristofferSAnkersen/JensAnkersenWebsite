@@ -9,32 +9,46 @@
 }
 
 <div class="text-center">
-    <h1 class="display-3">Jeg tilbyder følgende:</h1>
+    <h1 class="display-3">Jeg tilbyder:</h1>
 </div>
+
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="thumbnail col-md-4">
             <button class="subjectbox" id="therapybutton" onclick="window.location='Therapy/Therapy'">
-                Terapeutiske Samtaler
+                Terapi samtaler
             </button>
         </div>
-        <div class="col-md-4">
+        <div class="thumbnail col-md-4">
             <button class="subjectbox" id="supervisionbutton" onclick="window.location='Supervision/Supervision'">
                 Supervision
             </button>
         </div>
-        <div class="col-md-4">
+        <div class="thumbnail col-md-4">
             <button class="subjectbox" id="organizationbutton" onclick="window.location='Organization/Organization'">
-                Organisations Udvikling
+                Organisations-<br />udvikling
             </button>
         </div>
-        <div class="col-md-4">
+        <div class="thumbnail col-md-4">
             <button class="subjectbox" id="teachingbutton" onclick="window.location='Teaching/Teaching'">
                 Undervisning
             </button>
         </div>
+
     </div>
 </div>
-<div class="text-center">
+<div class="text-center thumbnail">
     <a> @Html.ActionLink("Tilbage til toppen", "Index", controllerstring, null, null, "BackToTop", null, null)</a>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+@*<div class="thumbnail col-md-4">
+    <a title="Terapi" href="../therapy/therapy">
+        <img class="img subjectbox" src="~/images/SunsetImage.jpg" alt="Sunset">
+    </a>
+</div>*@

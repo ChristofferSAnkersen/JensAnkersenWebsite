@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar navbar-light border-bottom-0">
             <div class="container justify-content-center">
-                <a class="navbar-brand text-center" asp-area="" asp-controller="Home" asp-action="Index">
+                <a class="navbar-brand text-center thumbnail" asp-area="" asp-controller="Home" asp-action="Index">
                     Jens Ankersen<br />
                     Terapi og organisationskonsultation på systemisk og narrativt grundlag
                 </a>
@@ -26,28 +26,28 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse line">
                     <ul class="navbar-nav flex-grow-1 justify-content-sm-around">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Therapy" asp-action="Therapy">Terapi</a>
+                            <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="Therapy" asp-action="Therapy">Terapi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Organization" asp-action="Organization">Organisationsudvikling</a>
+                            <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="Organization" asp-action="Organization">Organisationsudvikling</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Supervision" asp-action="Supervision">Supervision</a>
+                            <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="Supervision" asp-action="Supervision">Supervision</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Teaching" asp-action="Teaching">Undervisning</a>
+                            <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="Teaching" asp-action="Teaching">Undervisning</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Contact">Kontakt</a>
+                            <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="Contact" asp-action="Contact">Kontakt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="More" asp-action="More">Mere</a>
+                            <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="More" asp-action="More">Mere</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <img class="img" src="@Url.Content("~/images/sunimage.jpg")" />
+        <img class="img" src="@Url.Content("~/images/frontpage.jpg")" />
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -58,9 +58,9 @@
         <div class="container">
             &copy; @DateTime.Now.Year -
             Jens Ankersen -
-            <a asp-area="" asp-controller="Contact" asp-action="Contact">Kontakt mig</a> -
-            <a asp-area="" asp-controller="Prices" asp-action="Prices">Honorar</a> -
-            <a asp-area="" asp-controller="Privacy" asp-action="Privacy">Privatlivspolitik</a>
+            <a class="thumbnail" asp-area="" asp-controller="Contact" asp-action="Contact">Kontakt mig</a> -
+            <a class="thumbnail" asp-area="" asp-controller="Prices" asp-action="Prices">Honorar</a> -
+            <a class="thumbnail" asp-area="" asp-controller="Privacy" asp-action="Privacy">Privatlivspolitik</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
