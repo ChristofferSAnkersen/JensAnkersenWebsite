@@ -10,7 +10,7 @@ namespace JensAnkersen.Controllers
 {
     public class SupervisionController : Controller
     {
-        public IActionResult Supervision()
+        public IActionResult Index()
         {
             // Use this to set the name of the controller to use to-top functions
             string controllerName = this.ControllerContext.RouteData.Values["controller"].ToString();

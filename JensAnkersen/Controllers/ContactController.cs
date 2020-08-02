@@ -10,7 +10,7 @@ namespace JensAnkersen.Controllers
 {
     public class ContactController : Controller
     {
-        public IActionResult Contact()
+        public IActionResult Index()
         {
             // Use this to set the name of the controller to use to-top functions
             string controllerName = this.ControllerContext.RouteData.Values["controller"].ToString();
