@@ -10,14 +10,14 @@
 }
 
 <div class="text-center">
-    <h1 class="display-3">@ViewData["Title"]</h1>
+    <h1 class="display-3" style="font-size:1.8vmax;">@ViewData["Title"]</h1>
 </div>
 <body>
-    <div class="text-center">
+    <div class="text-center" style="font-size:1.2vmax;">
         TODO
     </div>
 </body>
-<div class="text-center">
-    <a> @Html.ActionLink("Tilbage til toppen", "Privacy", controllerstring, null, null, "BackToTop", null, null) | </a>
+<div class="text-center" style="font-size:0.8vmax;">
+    <a> @Html.ActionLink("Tilbage til toppen", "Index", controllerstring, null, null, "BackToTop", null, null) | </a>
     <a> @Html.ActionLink("Tilbage til forsiden", "Index", "Home", null, null, "BackToTop", null, null) </a>
 </div>

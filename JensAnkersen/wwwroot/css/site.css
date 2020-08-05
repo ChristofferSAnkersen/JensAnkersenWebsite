@@ -1,6 +1,15 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+@media only screen and (max-width: 800px) {
+    .row { flex-flow: column; height: 110vmax; width: 90vmax; margin: auto; }
+    
+}
+
+@media only screen and (min-width: 801px) {
+    .row { height: 14vmax; width: 100vmax; margin: auto; }
+}
+
 .flex_box_wrapper {
     display: flex;
     height: 100%;
@@ -23,7 +32,8 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .img {
     width: 100%;
-    height: 250px;
+    height: 100%;
+    background-size: cover;
 }
 
 .thumbnail:hover {
@@ -39,7 +49,7 @@ for details on configuring this project to bundle and minify static web assets. 
     height: 100%;
     width: 100%;
     overflow: hidden;
-    transition-duration: 1s;
+    transition-duration: 0.7s;
     transform: translateY(0);
 }
 
@@ -53,7 +63,10 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .wrapper_box {
-    display: inline-block;
+    overflow:hidden;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .wrapper_box:hover .headline {
@@ -67,29 +80,28 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .col-md-4 {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    padding: 5px 5px 5px 5px;
     flex: 0 0 25%;
-    height: 100%;
+    max-height: 100%;
 }
 
 .row {
-    height: 250px;
+    display: flex;
     max-width: 100%;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 
 .subjectbox {
+    max-height: 100%;
     height: 100%;
     width: 100%;
     color: white;
     border-width: 5px;
     border-color: burlywood;
-    font-size: xx-large;
-    background-size: auto 250px;
+    font-size: 1.8vw;
+    background-size: cover;
+    background-position:center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -125,6 +137,10 @@ for details on configuring this project to bundle and minify static web assets. 
     background-image: linear-gradient(-90deg, beige, cornsilk, beige, cornsilk, beige);
 }
 
+.nav-item {
+    font-size: 0.8vw;
+}
+
 .navbar-expand-sm {
     /*background-image: linear-gradient(orange, darkorange, chocolate);*/
     /*background-color: gol;*/
@@ -157,12 +173,6 @@ a {
 -------------------------------------------------- */
 html {
     font-size: 14px;
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
 }
 
 .border-top {
@@ -200,4 +210,8 @@ body {
     width: 100%;
     white-space: nowrap;
     line-height: 60px; /* Vertically center the text there */
+}
+
+.div {
+    
 }
