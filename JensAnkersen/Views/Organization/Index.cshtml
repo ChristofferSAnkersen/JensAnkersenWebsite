@@ -8,16 +8,16 @@
 }
 
 <div class="text-center">
-    <h1 class="display-3" style="font-size:1.8vmax; font-weight:bold; padding-top: 20px; width:70%; margin:auto;">Organisationsudvikling,</h1>
+    <h1 class="display-3">Organisationsudvikling,</h1>
 </div>
 <body>
-    <div style="padding:30px 0px 30px 0px">
-        <h2 title="page_subtitle" class="text-center" style="margin: auto; font-size:1.2vmax; max-width: 80%;">
+    <div>
+        <h2 title="page_subtitle" class="text-center page_subheader">
             Personaletræning og Konflikthåndtering
         </h2>
     </div>
-    <div class="flex_box_wrapper" style="font-size:0.8vmax;">
-        <div class="flex_box_left" style="padding: 10px;">
+    <div class="flex_box_wrapper page_text">
+        <div class="flex_box_left">
             <p>
                 <b>Hjælp til udvikling af arbejdspladsen - en samskabende proces</b><br /><br />
 
@@ -83,11 +83,11 @@
                 <a href="mailto:jank61@hotmail.com?subject=Forespørgsel%20for%20organization">Kontakt</a> mig gerne for en uformel samtale om jeres organisation og de behov I har.
             </p>
         </div>
-        <div class="flex_box_right" style="padding: 10px;">
-            <p title="previous_said" style="font-style:italic">
+        <div class="flex_box_right">
+            <p title="previous_said">
                 <b>Tidligere kunder siger:</b><br />
             </p>
-            <p title="statement" style="font-style:oblique">
+            <p title="statement">
                 ”Tak for din indsats gennem 7 år. En indsats, som i sin grundsubstans har ændret Solvang i og med det var dig, der fik ledelsen med ind i supervisionslokalet samtidig med du i højere grad fokuserede på den enkeltes tilgang/væremåde og den enkeltes handlemuligheder.
                 Du har været med til at nedbryde mentalt opbyggede barriere mellem medarbejderne og ledelsen og dermed har du været med til at skabe en kultur, som vores borgere den dag i dag stadig profitere af, fordi vi som personale har udviklet os i en langt mere hensigtsmæssig retning.
                 Og du har gjort det med den største respekt for den enkelte, du har altid sørget for, at alle gik ok ud af lokalet ligesom du har fulgt op på eventuelle løse ender – der skal være plads til alle og alle skal være med.<br />
@@ -98,7 +98,7 @@
             <p title="said_by">
                 - Teamleder Henrik Andersen, Bostedet Solvang, Socialpsykiatrisk botilbud i Lejre Kommune.<br /><br />
             </p>
-            <p title="statement" style="font-style:oblique">
+            <p title="statement">
                 ”ALLE  FORTJENER  EN  JENS!”
                 Vi er blevet et fantastisk team, som smitter positivt af på hinanden, og vi anerkendes af andre for det sammenhold vi har fået i teamet - det er takket være din tilgang til os.
                 Individuelt forløb med samtaler
@@ -111,7 +111,7 @@
         </div>
     </div>
 </body>
-<div class="text-center" style="font-size:0.8vmax;">
-    <a> @Html.ActionLink("Tilbage til toppen", "Index", controllerstring, null, null, "BackToTop", null, null) | </a>
-    <a> @Html.ActionLink("Tilbage til forsiden", "Index", "Home", null, null, "BackToTop", null, null) </a>
+<div class="text-center bottom-nav">
+    <a class="thumbnail" asp-area="" asp-controller="@controllerstring" asp-action="Index" asp-fragment="BackToTop">Tilbage til toppen</a> |
+    <a class="thumbnail" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="BackToTop">Tilbage til forsiden</a>
 </div>

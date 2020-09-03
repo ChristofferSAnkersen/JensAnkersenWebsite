@@ -12,10 +12,10 @@
         <nav class="navbar navbar-light border-bottom-0">
             <div class="container justify-content-center">
                 <a class="navbar-brand text-center thumbnail" asp-area="" asp-controller="Home" asp-action="Index">
-                    <p style="font-size: 2.8vmax; margin-bottom: 5px;">
+                    <p class="layout_header">
                         Jens Ankersen
                     </p>
-                    <p style="font-size: 1.2vw;">Samtaler, Supervision, Undervisning, Organisationsudvikling i et systemisk og narrativt perspektiv</p>
+                    <p class="layout_subheader">Samtaler, Supervision, Undervisning, Organisationsudvikling i et systemisk og narrativt perspektiv</p>
                 </a>
             </div>
         </nav>
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </nav>
-        <img class="img" src="@Url.Content("~/images/frontpage.jpg")" />
+        <img class="layout_img" src="@Url.Content("~/images/frontpage.jpg")" />
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -57,12 +57,12 @@
         </main>
     </div>
     <footer class="border-top footer text-muted text-center">
-        <div class="container" style="font-size:0.8vmax;">
+        <div class="text-center bottom-nav">
+            <a class="thumbnail" asp-area="" asp-controller="Contact" asp-action="Index">Kontakt mig</a> -
+            <a class="thumbnail" asp-area="" asp-controller="Prices" asp-action="Index">Priser & Honorar</a> -
+            <a class="thumbnail" asp-area="" asp-controller="Privacy" asp-action="Index">Privatlivspolitik</a><br />
             &copy; @DateTime.Now.Year -
-            Jens Ankersen -
-            <a class="thumbnail" style="font-size:0.8vmax;" asp-area="" asp-controller="Contact" asp-action="Index">Kontakt mig</a> -
-            <a class="thumbnail" style="font-size:0.8vmax;" asp-area="" asp-controller="Prices" asp-action="Index">Priser & Honorar</a> -
-            <a class="thumbnail" style="font-size:0.8vmax;" asp-area="" asp-controller="Privacy" asp-action="Index">Privatlivspolitik</a>
+            Jens Ankersen
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

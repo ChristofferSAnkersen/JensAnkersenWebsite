@@ -6,41 +6,45 @@
     if (!String.IsNullOrWhiteSpace(Model.ControllerString))
     {
         controllerstring = Model.ControllerString;
-        string key = "AIzaSyAzz8pDlbJEz4AvwQOSGBqLDVyJEPlYgHk";
     }
 }
 
 <div class="text-center">
-    <h1 class="display-3" style="padding-top:20px; font-size:1.8vmax; font-weight:bold;" >@ViewData["Title"]</h1>
+    <h1 class="display-3">@ViewData["Title"]</h1>
 </div>
-
 <body>
-    <div style="padding:30px 0px 70px 0px">
-        <h2 title="page_subtitle" class="text-center" style="margin: auto; font-size:1.2vmax; max-width: 80%;">
-            Hvis du ønsker at høre mere om hvad jeg tilbyder og er interesseret, så ræk endelig ud på nedenstående informationer:
+    <div>
+        <h2 class="page_subheader text-center" title="page_subtitle">
+            Hvis du ønsker at høre mere om hvad jeg tilbyder, så ræk endelig ud på nedenstående informationer:
         </h2>
     </div>
-    <div class="flex_box_wrapper">
-        <div class="flex_box_left" style="flex: 0 0 50%; box-shadow:none; text-align:right">
-            <p style="font-size:1.8vmax; line-height: 2.6;">
-                60185111<br />
-                jank61@hotmail.com(link)<br />
-                Vinkældervej 12, 5000 Odense C<br />
+    <div class="flex_box_wrapper contact">
+        <div class="flex_box_left contact">
+            <p class="contact_info">
+                <a href="tel:+4560185111">+45 60185111</a><br />
+                <a href="mailto:jank61@hotmail.com?subject=Forespørgsel%20på%20opgave">jank61@hotmail.com</a><br />
             </p>
         </div>
-        <div class="flex_box_right" style="flex: 0 0 50%; height: 14vmax; box-shadow:none;">
-            <img class="flex_box_right" src="~/images/JensAnkersenHvemErJeg.png" />
+        <div>
+            <img class="flex_box_right contact" src="~/images/JensAnkersenHvemErJeg.png" />
         </div>
     </div>
-    <h2 class="text-center" style="padding-top: 20px; margin: auto; font-size:2.0vmax; font-weight:bold; max-width: 80%;">
+    <h2 class="display-3 text-center">
         Find vej:
     </h2>
-    <div style="display:flex; margin:auto; flex:auto; padding:20px 0 40px 0;">
+    <div class="google_iframe">
         <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAzz8pDlbJEz4AvwQOSGBqLDVyJEPlYgHk&q=Vinkældervej+12,Odense+Danmark&zoom=16"
-                title="googleMaps" width="1100" height="700" frameborder="0" style="border:0; margin:auto;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br /><br /><br />
+                title="googleMaps"
+                width="1100"
+                height="700"
+                frameborder="0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+                style="border:0; margin:auto;"></iframe><br /><br /><br />
     </div>
 </body>
-<div class="text-center">
-    <a> @Html.ActionLink("Tilbage til toppen", "Index", controllerstring, null, null, "BackToTop", null, null) | </a>
-    <a> @Html.ActionLink("Tilbage til forsiden", "Index", "Home", null, null, "BackToTop", null, null) </a>
+<div class="text-center bottom-nav">
+    <a class="thumbnail" asp-area="" asp-controller="@controllerstring" asp-action="Index" asp-fragment="BackToTop">Tilbage til toppen</a> |
+    <a class="thumbnail" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="BackToTop">Tilbage til forsiden</a>
 </div>

@@ -10,24 +10,24 @@
 }
 
 <div class="text-center">
-    <h1 class="display-3" style="font-size:1.8vmax;">@ViewData["Title"]</h1>
+    <h1 class="display-3">@ViewData["Title"]</h1>
 </div>
 <body>
-    <div style="padding:30px 0px 70px 0px">
-        <h2 title="page_subtitle" class="text-center" style="margin: auto; font-size:1.2vmax; max-width: 80%;">
+    <div>
+        <h2 title="page_subtitle" class="page_subheader text-center">
         </h2>
     </div>
-    <div class="flex_box_wrapper" style="font-size:0.8vmax;">
-        <div class="flex_box_left" style="padding: 10px;">
+    <div class="flex_box_wrapper">
+        <div class="flex_box_left">
             <p>
 
             </p>
         </div>
-        <div class="flex_box_right" style="padding: 10px; height: 300px;">
-            <p class="" title="previous_said" style="font-style:italic">
+        <div class="flex_box_right">
+            <p class="" title="previous_said">
                 Tidligere kunde siger:<br />
             </p>
-            <p title="statement" style="font-style:oblique">
+            <p title="statement">
 
             </p>
             <p title="said_by">
@@ -36,7 +36,7 @@
         </div>
     </div>
 </body>
-<div class="text-center" style="font-size:0.8vmax;">
-    <a> @Html.ActionLink("Tilbage til toppen", "Index", controllerstring, null, null, "BackToTop", null, null) | </a>
-    <a> @Html.ActionLink("Tilbage til forsiden", "Index", "Home", null, null, "BackToTop", null, null) </a>
+<div class="text-center bottom-nav">
+    <a class="thumbnail" asp-area="" asp-controller="@controllerstring" asp-action="Index" asp-fragment="BackToTop">Tilbage til toppen</a> |
+    <a class="thumbnail" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="BackToTop">Tilbage til forsiden</a>
 </div>

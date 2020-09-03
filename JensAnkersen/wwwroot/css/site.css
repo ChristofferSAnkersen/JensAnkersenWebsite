@@ -1,33 +1,275 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-@media only screen and (max-width: 800px) {
-    .row { flex-flow: column; height: 110vmax; width: 90vmax; margin: auto; }
-    
+/*Mobile settings*/
+@media only screen and (max-width: 575px) {
+    .renderbody {
+        max-width: 560px;
+    }
+
+    .row {
+        flex-flow: column;
+        height: 110vmax;
+        width: 90vmax;
+        margin: auto;
+    }
+
+    .layout_header {
+        font-size: 5.0vmax;
+        margin-bottom: 5px;
+    }
+
+    .layout_subheader {
+        font-size: 1.6vmax;
+        white-space: pre-wrap;
+        word-break: keep-all;
+    }
+
+    .layout_img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .image-header {
+        font-size: 5vmax;
+    }
+
+    .image-subheader {
+        font-size: 2.5vmax;
+    }
+
+        .image-subheader.large {
+            font-size: 3.6vmax;
+        }
+
+        .image-subheader.medium {
+            font-size: 3.0vmax;
+        }
+
+        .image-subheader.small {
+            font-size: 2.0vmax;
+        }
+
+    .display-3 {
+        font-size: 3.8vmax;
+        font-weight: bold;
+    }
+
+    .display-4 {
+        font-size: 3.0vmax;
+        line-height: 1.6;
+        margin: 0 0 30px 0;
+    }
+
+    .page_subheader {
+        margin: auto;
+        font-size: 2.2vmax;
+        line-height: 1.6;
+        max-width: 95%;
+        padding: 10px 0px 30px 0px;
+    }
+
+    .page_text {
+        padding-top: 10px;
+        margin: auto;
+        font-size: 1.5vmax;
+        max-width: 80%;
+    }
+
+    .text-center .bottom-nav {
+        font-size: 1.6vmax;
+        line-height: 1.6;
+        padding: 10px; 
+    }
+
+    .contact_subtitle {
+        margin: auto;
+        font-size: 2.2vmax;
+        line-height: 1.8;
+        max-width: 95%;
+        padding: 10px 0px 25px 0px;
+    }
+
+    .contact_info {
+        font-size: 2.4vmax;
+        line-height: 3.0;
+    }
+
+    .nav-item {
+        font-size: 3.6vw;
+        padding-top: 10px;
+    }
+
+    .flex_box_right {
+        flex: 0 0 33%;
+        margin: 0px 0px 25px 0px;
+        box-shadow: inset 0 0 0 1px black;
+        height: 100%;
+        padding: 10px 5px 10px 5px;
+    }
+
+        .flex_box_right.contact {
+            flex: 0 0 40%;
+            height: 15vmax;
+            box-shadow: none;
+        }
+
+    .flex_box_left {
+        flex: 0 0 67%;
+        margin: 0px 0px 50px 0px;
+        flex-grow: 1;
+        box-shadow: inset 0 0 0 1px black;
+        height: 100%;
+        padding: 10px 5px 10px 5px;
+    }
+
+        .flex_box_left.contact {
+            flex: 0 0 60%;
+            height: 14vmax;
+            box-shadow: none;
+            text-align: center;
+        }
+
+    .flex_box_wrapper {
+        display: flex;
+        height: 100%;
+        max-width: 100%;
+        flex-flow: column;
+    }
+
+        .flex_box_wrapper.contact {
+            flex-flow: row;
+            max-width: 100%;
+        }
 }
 
-@media only screen and (min-width: 801px) {
-    .row { height: 14vmax; width: 100vmax; margin: auto; }
+/*Desktop settings*/
+@media only screen and (min-width: 576px) {
+    .row {
+        height: 14vmax;
+        width: 100vmax;
+        margin: auto;
+    }
+
+    .layout_header {
+        font-size: 2.6vmax;
+        margin-bottom: 5px;
+    }
+
+    .layout_subheader {
+        font-size: 1.0vmax;
+    }
+
+    .layout_img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .image-header {
+        font-size: 2vmax;
+    }
+
+    .image-subheader {
+        font-size: 1.2vmax;
+    }
+
+        .image-subheader.large {
+            font-size: 1.6vmax;
+        }
+
+        .image-subheader.medium {
+            font-size: 1.4vmax;
+        }
+
+        .image-subheader.small {
+            font-size: 0.9vmax;
+        }
+
+    .page_subheader {
+        margin: auto;
+        font-size: 1.0vmax;
+        max-width: 80%;
+        padding: 30px 0px 70px 0px;
+    }
+
+    .page_text {
+        padding-top: 10px;
+        margin: auto;
+        font-size: 0.8vmax;
+        max-width: 80%;
+    }
+
+    .display-3 {
+        font-size: 2.0vmax;
+        font-weight: bold;
+        margin: 15px 0 0 0;
+    }
+
+    .display-4 {
+        font-size: 1.6vmax;
+        line-height: 1.6;
+        margin: 0 0 30px 0;
+    }
+
+    .nav-item {
+        font-size: 0.8vmax;
+    }
+
+    .text-center.bottom-nav {
+        font-size: 1.0vmax;
+        line-height: 1.8;
+        padding: 10px;
+    }
+
+    .contact_info {
+        font-size: 1.8vmax;
+        line-height: 3.0;
+    }
+
+    .flex_box_right {
+        flex: 0 0 33%;
+        margin: 0px 0px 0px 20px;
+        box-shadow: inset 0 0 0 1px black;
+        height: 100%;
+        padding: 10px 5px 10px 5px;
+    }
+
+        .flex_box_right.contact {
+            flex: 0 0 50%;
+            height: 14vmax;
+            box-shadow: none;
+        }
+
+    .flex_box_left {
+        flex: 0 0 67%;
+        margin: 0px 0px 50px -10px;
+        flex-grow: 1;
+        box-shadow: inset 0 0 0 1px black;
+        height: 100%;
+        padding: 10px 5px 10px 5px;
+    }
+
+        .flex_box_left.contact {
+            flex: 0 0 50%;
+            height: 14vmax;
+            box-shadow: none;
+            text-align: right;
+        }
+
+    .flex_box_wrapper {
+        display: flex;
+        height: 100%;
+    }
 }
 
-.flex_box_wrapper {
+/*Global properties*/
+.google_iframe {
     display: flex;
-    height: 100%;
-}
-
-.flex_box_right {
-    flex: 0 0 33%;
-    margin: 0px 0px 0px 20px;
-    box-shadow: inset 0 0 0 1px black;
-    height: 100%;
-}
-
-.flex_box_left {
-    flex: 0 0 67%;
-    margin: 0px 0px 50px -10px;
-    flex-grow: 1;
-    box-shadow: inset 0 0 0 1px black;
-    height: 100%;
+    margin: auto;
+    flex: auto;
+    padding: 20px 0 40px 0;
 }
 
 .img {
@@ -63,21 +305,21 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .wrapper_box {
-    overflow:hidden;
-    position:relative;
+    overflow: hidden;
+    position: relative;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
-.wrapper_box:hover .headline {
-    height: 0;
-    opacity: 0;
-}
+    .wrapper_box:hover .headline {
+        height: 0;
+        opacity: 0;
+    }
 
-.wrapper_box:hover .popup {
-    height: 100%;
-    opacity: 1;
-}
+    .wrapper_box:hover .popup {
+        height: 100%;
+        opacity: 1;
+    }
 
 .col-md-4 {
     padding: 5px 5px 5px 5px;
@@ -101,7 +343,7 @@ for details on configuring this project to bundle and minify static web assets. 
     border-color: burlywood;
     font-size: 1.8vw;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -137,9 +379,7 @@ for details on configuring this project to bundle and minify static web assets. 
     background-image: linear-gradient(-90deg, beige, cornsilk, beige, cornsilk, beige);
 }
 
-.nav-item {
-    font-size: 0.8vw;
-}
+
 
 .navbar-expand-sm {
     /*background-image: linear-gradient(orange, darkorange, chocolate);*/
@@ -199,19 +439,13 @@ html {
     min-height: 100%;
 }
 
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-}
-
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 1; /* Vertically center the text there */
 }
 
 .div {
-    
 }

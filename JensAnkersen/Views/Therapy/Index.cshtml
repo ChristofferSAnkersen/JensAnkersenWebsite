@@ -4,17 +4,17 @@
     string controllerstring = Model.ControllerString;
 }
 
-<div class="text-center" style="padding:20px 0px 0px 0px;">
-    <h1 class="display-3" style="font-size:1.8vmax; font-weight:bold;">@ViewData["Title"]</h1>
+<div class="text-center">
+    <h1 class="display-3">@ViewData["Title"]</h1>
 </div>
 <body>
-    <div title="subtitle" style="padding: 30px 0px 40px 0px">
-        <h2 class="text-center" style="margin: auto; font-size:1.2vmax; max-width: 80%;">
+    <div title="subtitle">
+        <h2 class="page_subheader text-center">
             Jeg tilbyder terapi til enkeltpersoner, til par, til hele eller dele af familier og deres netværk.
         </h2>
     </div>
-    <div class="flex_box_wrapper">
-        <div class="flex_box_left" style="padding: 10px; font-size:0.8vmax">
+    <div class="flex_box_wrapper page_text">
+        <div class="flex_box_left">
             <p>
                 Vores moderne tilværelse er kompleks. Heldigvis er livet mest fuldt af glæder, energivende oplevelser og gode stabile kærlige relationer.<br />
                 Alle mennesker oplever perioder med udfordringer og vanskeligheder og det meste af det klares ved egen indsats eller ved hjælp og støtte fra familie, gode venner eller nære kolleger.<br />
@@ -34,18 +34,18 @@
                 •&nbsp;&nbsp;&nbsp;&nbsp;Samtalerne <b>går ud på at opdage nye muligheder og nye veje</b> eller forlige sig med problemet ved andre måder at tænke/handle/forholde sig til det på.<br />
             </p>
         </div>
-        <div class="flex_box_right" style="padding: 10px; font-size:0.8vmax;">
-            <p title="therapy_previous" style="font-style:italic">
+        <div class="flex_box_right">
+            <p title="therapy_previous">
                 <b>Tidligere kunder siger:</b><br />
             </p>
-            <p title="statement" style="font-style:oblique">
+            <p title="statement">
                 ”Tusinde tak for din hjælp – det har været meget konstruktivt og det føles som om jeg har fået værktøjer, jeg kan bruge i mine nære relationer, når/hvis det begynder at gå lidt skævt.
                 Jeg har lært meget om mig selv. Det har hjulpet mig meget til at forstå mine følelser, mine reaktioner og det har hjulpet mig med at bede om hjælp”.
             </p>
             <p title="said_by">
                 - Katja Helmich Fraser, 6 samtaler sommer 2019.11.08<br /><br />
             </p>
-            <p title="statement" style="font-style:oblique">
+            <p title="statement">
                 ”Fik anbefalet Jens af en bekendt. Vi gik til parterapi i lidt over et år, og det var uvurderligt. 
                 Min kæreste og jeg havde på det tidspunkt været sammen i 9 år, og var kommet i en hårdknude gennem længere tid. 
                 Vi var rimelig sikker på, at det var vores kommunikation, den var gal med, men under sessionerne fandt vi ud af, at vi havde langt dybereliggende problematikker, vi skulle arbejde med. 
@@ -57,7 +57,7 @@
         </div>
     </div>
 </body>
-<div class="text-center" style="font-size:0.8vmax;">
-    <a> @Html.ActionLink("Tilbage til toppen", "Index", controllerstring, null, null, "BackToTop", null, null) | </a>
-    <a> @Html.ActionLink("Tilbage til forsiden", "Index", "Home", null, null, "BackToTop", null, null) </a>
+<div class="text-center bottom-nav">
+    <a class="thumbnail" asp-area="" asp-controller="@controllerstring" asp-action="Index" asp-fragment="BackToTop">Tilbage til toppen</a> |
+    <a class="thumbnail" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="BackToTop">Tilbage til forsiden</a>
 </div>
