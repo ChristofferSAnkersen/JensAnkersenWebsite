@@ -8,14 +8,71 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body class="renderbody">
+    @* Add snow in december *@
+    @if (DateTime.UtcNow.Month == 12)
+	{
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+    </div>
+	}
     <header>
         <nav class="navbar navbar-light border-bottom-0">
             <div class="container justify-content-center">
                 <a class="navbar-brand text-center thumbnail" asp-area="" asp-controller="Home" asp-action="Index">
-                    <p class="layout_header">
-                        Jens Ankersen
+                    <div class="header_container">
+                        <div class="layout_header">
+                            <p>
+                                Jens Ankersen
+                            </p>
+                        </div>
+                        <div class="organization_logo">
+                            <img style="width:100%;" src="~/images/dpf_logo.png" />
+                        </div>
+                    </div>
+                    <p class="layout_subheader">
+                        Samtaler, Supervision, Undervisning, Organisationsudvikling i et systemisk og narrativt perspektiv
                     </p>
-                    <p class="layout_subheader">Samtaler, Supervision, Undervisning, Organisationsudvikling i et systemisk og narrativt perspektiv</p>
                 </a>
             </div>
         </nav>
@@ -49,7 +106,7 @@
                 </div>
             </div>
         </nav>
-        <img class="layout_img" src="@Url.Content("~/images/frontpage.jpg")" />
+        <img class="layout_img" src="@Url.Content("~/images/frontpage-edit.jpg")" />
     </header>
     <div class="container">
         <main role="main" class="pb-3">
