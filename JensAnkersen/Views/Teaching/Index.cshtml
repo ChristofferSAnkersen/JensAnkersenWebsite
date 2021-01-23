@@ -1,6 +1,7 @@
 ﻿@model ControllerName
 @{
     ViewData["Title"] = "Undervisning";
+
     string controllerstring = "";
     if (!String.IsNullOrWhiteSpace(Model.ControllerString))
     {
@@ -10,18 +11,17 @@
 
 <div class="text-center">
     <h1 class="display-3">
-        Undervisning
+        Jeg udbyder temadage og kurser i forskellige emner samt uddannelsesforløb i den <a href="https://widsell.dk/hvad-er-systemisk-narrativ-perspektiv/" target="_blank">systemiske-narrative</a> tilgang.
     </h1>
 </div>
 <body>
-    <div>
-        <h2 title="Systemiske-narrative metode" class="page_subheader text-center">
-            Jeg udbyder temadage, kurser og uddannelsesforløb i den <a href="https://widsell.dk/hvad-er-systemisk-narrativ-perspektiv/" target="_blank">systemiske-narrative</a> tilgang.
-        </h2>
-    </div>
     <div class="flex_box_wrapper page_text">
         <div class="flex_box_left">
             <p>
+                <a class="display-4">
+                    Undervisning
+                </a><br /><br />
+
                 <b class="quote_headline">
                     Kurser er en af vejene til inspiration, dygtiggørelse og faglig opkvalificering
                 </b><br /><br />
@@ -38,46 +38,88 @@
 
                 <b>Områder hvor jeg tilbyder temadage, kurser og uddannelse:</b><br /><br />
 
-                •&nbsp;&nbsp;&nbsp;&nbsp;Systemisk anerkendende tilgang - som metode til rehabilitering<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Konflikthåndtering og konfliktforståelse<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Medarbejderen som coach - lær at styrke borgerens aktive deltagelse og mestringsevne<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Rehabilitering – inddrag borgeren og netværket.<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Den narrative samtale<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Eksternalisering; ”Ikke personen der er problemet...”.<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Genforfattende samtale; ny identitetsskabelse<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Kommunikation og samarbejde<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Kollegial supervision / lære at supervisere andre<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Reflekterende team / outsider witness group<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Den vanskelige samtale – proces og indhold<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Værdsættende tilgang og metode (Appreciative Inquiry)<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Om at skabe forudsætninger for ændring og udvikling<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Åben Dialog og familie-netværksarbejde<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Den motiverende samtale<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Skizofreni - herunder fx at arbejde med "mestring af stemmerne"<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Personlighedsforstyrrelser. Umodne forsvarsmekanismer som fx splitting<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;Afhængighed af alkohol og andre rusmidler – tilgang og forståelse<br /><br />
-                •&nbsp;&nbsp;&nbsp;&nbsp;At samarbejde med borgere med "Udfordrende" adfærd, fx borgere med vold som udtryksform, udad reagerende adfærd, misbrug eller personlighedsforstyrrelser, fx borderline personlighedsstruktur
+                <a class="page_list">
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Systemisk anerkendende tilgang - som metode til rehabilitering<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Konflikthåndtering og konfliktforståelse<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Medarbejderen som coach - lær at styrke borgerens aktive deltagelse og mestringsevne<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Rehabilitering – inddrag borgeren og netværket<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;At samarbejde med borgere med "Udfordrende" adfærd, fx borgere med vold som udtryksform, udadreagerende adfærd, misbrug eller personlighedsforstyrrelser, fx borderline personlighedsstruktur </br>
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Den narrative samtale<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Eksternalisering; ”Ikke personen der er problemet...”<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Genforfattende samtale; ny identitetsskabelse<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Kommunikation og samarbejde<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Kollegial supervision / lære at supervisere andre<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Reflekterende team / outsider witness group<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Den vanskelige samtale – proces og indhold<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Værdsættende tilgang og metode (Appreciative Inquiry)<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Om at skabe forudsætninger for ændring og udvikling<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Åben Dialog og familie-netværksarbejde<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Den motiverende samtale<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Skizofreni - herunder fx at arbejde med "mestring af stemmerne"<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Personlighedsforstyrrelser. Umodne forsvarsmekanismer som fx splitting<br />
+                    •&nbsp;&nbsp;&nbsp;&nbsp;Afhængighed af alkohol og andre rusmidler – tilgang og forståelse
+                </a>
             </p>
         </div>
         <div class="flex_box_wrapper_column_right">
             <div class="flex_box_right">
+                <p class="client_quote">
+                    Kursister udtaler om udddannelsesforløb
+                </p>
+            </div>
+            <div class="flex_box_right">
+                <p class="quote_headline">
+                    <b>”Overskrift”</b>
+                </p>
                 <p class="quote" title="statement">
                     ”Det var nogle spændende dage. Jeg kan godt lide din undervisning, som jeg oplever involverende og inspirerende. Jeg kan godt lide at lære nyt samt at forsøge at koble det på noget, jeg kender til I forvejen. Så tusind tak for det du kommer med”.
                 </p>
+                <p class="quote_said_by" title="said_by">
+                    - Anonym.<br />
+                </p>
             </div>
             <div class="flex_box_right">
+                <p class="quote_headline">
+                    <b>”Overskrift”</b>
+                </p>
                 <p class="quote" title="statement">
                     ”Ærligt er jeg blæst bagover. Virkelig god formidler som forstår at ”lære sit publikum at kende”. Jeg er særlig glad og inspireret, når teori kobles med egne fortællinger. Jeg har kun positive ting at sige. Højt fagligt niveau”.
                 </p>
-            </div>
-            <div class="flex_box_right">
-                <p class="quote" title="statement">
-                    ”Fremragende formidling. Inspirerende og let forståelig underviser. Rigtig god til at formidle. Fedt når teori og praksis kobles hvor du fortæller egne oplevede situationer. Jeg mærker virkelig engagement og det smitter”.
+                <p class="quote_said_by" title="said_by">
+                    - Anonym.<br />
                 </p>
             </div>
             <div class="flex_box_right">
+                <p class="quote_headline">
+                    <b>”Overskrift”</b>
+                </p>
+                <p class="quote" title="statement">
+                    ”Fremragende formidling. Inspirerende og let forståelig underviser. Rigtig god til at formidle. Fedt når teori og praksis kobles hvor du fortæller egne oplevede situationer. Jeg mærker virkelig engagement og det smitter”.
+                </p>
+                <p class="quote_said_by" title="said_by">
+                    - Anonym.<br />
+                </p>
+            </div>
+            <div class="flex_box_right">
+                <p class="quote_headline">
+                    <b>”Overskrift”</b>
+                </p>
                 <p class="quote" title="statement">
                     ”Meget engageret og kompetent underviser. Skaber et trygt rum for alle, så jeg tør øve mig i at udvikle mine samtalekompetencer”.
+                </p>
+                <p class="quote_said_by" title="said_by">
+                    - Anonym.<br />
+                </p>
+            </div>
+            <div class="flex_box_right">
+                <p class="quote_headline">
+                    <b>”Overskrift”</b>
+                </p>
+                <p class="quote" title="statement">
+                    ”Det var nogle spændende dage. Jeg kan godt lide din undervisning, som jeg oplever involverende og inspirerende. Jeg kan godt lide at lære nyt og at forsøge at koble det på noget, jeg kender til I forvejen. Så tak for det du kommer med”.
+                </p>
+                <p class="quote_said_by" title="said_by">
+                    - Anonym.<br />
                 </p>
             </div>
         </div>

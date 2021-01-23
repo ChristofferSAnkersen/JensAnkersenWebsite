@@ -1,5 +1,7 @@
 ﻿@model ControllerName
 @{
+    ViewData["Title"] = "Organisationsudvikling";
+
     string controllerstring = "";
     if (!String.IsNullOrWhiteSpace(Model.ControllerString))
     {
@@ -8,21 +10,16 @@
 }
 
 <div class="text-center">
-    <h1 class="display-3">Organisationsudvikling, Personaletræning og Konflikthåndtering</h1>
+    <h1 class="display-3">Hjælp til udvikling af arbejdspladsen - en samskabende proces</h1>
 </div>
 <body>
-    <div>
-        <h2 title="page_subtitle" class="text-center page_subheader">
-            Hjælp til udvikling af arbejdspladsen - en samskabende proces
-        </h2>
-    </div>
     <div class="flex_box_wrapper page_text">
         <div class="flex_box_wrapper_column_left">
             <div class="flex_box_left">
                 <p>
-                    <b class="quote_headline">
-                        Organisationskonsultation
-                    </b><br /><br />
+                    <a class="display-4">
+                        @ViewData["Title"]
+                    </a><br /><br />
 
                     Alle organisationer undergår forandringer, som medfører at ledere og medarbejderne kommer til af møde nye udfordringer og nye måder at gribe kerneopgaver an på.<br />
                     For at lykkes bedst muligt med det, kræver det ofte at eksisterende kompetencer og mønstre får et slags serviceeftersyn.<br />
@@ -34,14 +31,16 @@
 
                     <br /><br />
 
-                    •&nbsp;&nbsp;&nbsp;&nbsp;Udvikling af organisationen og ændrede rammer for kerneopgaven<br /><br />
-                    •&nbsp;&nbsp;&nbsp;&nbsp;Trivsel på arbejdspladsen<br /><br />
-                    •&nbsp;&nbsp;&nbsp;&nbsp;Konflikthåndtering<br /><br />
-                    •&nbsp;&nbsp;&nbsp;&nbsp;Samarbejdet mellem medarbejdere og ledelse<br /><br />
-                    •&nbsp;&nbsp;&nbsp;&nbsp;Ønsker om bedre samarbejde – samarbejdsrelationer<br /><br />
-                    •&nbsp;&nbsp;&nbsp;&nbsp;Krisehjælp til udsatte medarbejdere/organisation<br /><br />
-                    •&nbsp;&nbsp;&nbsp;&nbsp;Omstruktureringer/nedskæringer i organisationen<br /><br />
-                    •&nbsp;&nbsp;&nbsp;&nbsp;Faglige og personlige værdier i arbejdet – betydning på kerneopgaverne
+                    <a class="page_list">
+                        •&nbsp;&nbsp;&nbsp;&nbsp;Udvikling af organisationen og ændrede rammer for kerneopgaven<br />
+                        •&nbsp;&nbsp;&nbsp;&nbsp;Trivsel på arbejdspladsen<br />
+                        •&nbsp;&nbsp;&nbsp;&nbsp;Konflikthåndtering<br />
+                        •&nbsp;&nbsp;&nbsp;&nbsp;Samarbejdet mellem medarbejdere og ledelse<br />
+                        •&nbsp;&nbsp;&nbsp;&nbsp;Ønsker om bedre samarbejde – samarbejdsrelationer<br />
+                        •&nbsp;&nbsp;&nbsp;&nbsp;Krisehjælp til udsatte medarbejdere/organisation<br />
+                        •&nbsp;&nbsp;&nbsp;&nbsp;Omstruktureringer/nedskæringer i organisationen<br />
+                        •&nbsp;&nbsp;&nbsp;&nbsp;Faglige og personlige værdier i arbejdet – betydning på kerneopgaverne
+                    </a>
 
                     <br /><br />
 
@@ -54,9 +53,9 @@
             </div>
             <div class="flex_box_left">
                 <p>
-                    <b class="quote_headline">
+                    <a class="display-4">
                         Personaletræning
-                    </b><br /><br />
+                    </a><br /><br />
 
                     <b>Personalegrupper bliver konstant udfordret i en faglig verden i bevægelse. Det er derfor nødvendigt løbende at undersøge, reflektere og evaluere de faglige og kollegiale processer.</b><br /><br />
 
@@ -77,9 +76,9 @@
             </div>
             <div class="flex_box_left">
                 <p>
-                    <b class="quote_headline">
+                    <a class="display-4">
                         Konflikthåndtering
-                    </b><br /><br />
+                    </a><br /><br />
 
                     <b>Uoverensstemmelser, modsætninger, konflikter</b> er en naturlig del af hverdagen i alle sammenhænge hvor mennesker mødes – derfor også på arbejdspladserne.
                     Det kræver et særligt fokus af se og få italesat modsætninger, så forskellige fortolkninger ikke påvirker arbejdsklimaet negativt.<br /><br />
@@ -94,7 +93,7 @@
 
                         Jeg arbejder ud fra en systemisk og narrativ forståelse af konflikter og konflikthåndtering. Jeg er især optaget af måden, vi taler om konflikten på.<br />
                         Fokus er at genskabe et rum hvor der lyttes og på skift prøves at se konflikten fra forskellige sider
-                    </b> med det formål, at få sat tingene i perspektiv og finde ind til, hvordan vi på en god måde kan komme videre sammen.<br />
+                    </b> med det formål, at få sat tingene i perspektiv og finde frem til, hvordan vi på en god måde kan komme videre sammen.<br />
                     Ud over at få overblik over uenighedens kerne, arbejdes der også på at genetablere den tillid, som parterne ofte har mistet til hinanden under konflikten.<br /><br />
 
                     <a href="mailto:jank61@hotmail.com?subject=Forespørgsel%20for%20organization">Kontakt</a> mig gerne for en uformel samtale om jeres organisation og de ønsker I har for udviklende processer.
@@ -103,10 +102,6 @@
         </div>
         <div class="flex_box_wrapper_column_right">
             <div class="flex_box_right">
-                @*<p title="previous_said">
-                        <b>Tidligere kunder siger:</b><br />
-                    </p>*@
-
                 <p class="quote_headline">
                     <b>”[...] udover at udstråle en masse god energi, giver medarbejdergruppen en masse fagligt at arbejde med”</b>
                 </p>
@@ -127,8 +122,11 @@
                     <b>”ALLE FORTJENER EN JENS!”</b>
                 </p>
                 <p class="quote" title="statement">
-                    ”Vi er blevet et fantastisk team, som smitter positivt af på hinanden, og vi anerkendes af andre for det sammenhold vi har fået i teamet - det er takket være din tilgang til os. 
-                    ****Individuelt forløb med samtaler. Personligt, er jeg dig ubeskrivelig taknemmelig, selvom jeg i første omgang tænkte “han kan ikke lære mig noget nyt”. Men det gjorde du til skamme! For grundet din måde at møde mig på, er jeg et sundere sted med en solid tro på mig selv og bevidsthed om, hvordan jeg passer på mig selv samtidig med, at min ordentlighed er intakt. Tak for et giveligt samarbejde. TAK for dig!”
+                    <b style="font-style:normal;">Organisationsudvikling</b><br />
+                    "Vi er blevet et fantastisk team, som smitter positivt af på hinanden, og vi anerkendes af andre for det sammenhold vi har fået i teamet - det er takket være din tilgang til os."<br /><br />
+
+                    <b style="font-style:normal;">Individuelt forløb med samtaler</b><br />
+                    "Personligt er jeg dig ubeskrivelig taknemmelig, selvom jeg i første omgang tænkte “han kan ikke lære mig noget nyt”. Men det gjorde du til skamme! For grundet din måde at møde mig på, er jeg et sundere sted med en solid tro på mig selv og bevidsthed om, hvordan jeg passer på mig selv samtidig med, at min ordentlighed er intakt. Tak for et giveligt samarbejde. TAK for dig!”
                 </p>
                 <p class="quote_said_by" title="said_by">
                     - Heidi Schrøder, Socialrådgiver Job- og Integration, Jobcenter Kolding.<br />

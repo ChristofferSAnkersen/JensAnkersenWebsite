@@ -122,6 +122,7 @@ for details on configuring this project to bundle and minify static web assets. 
         box-shadow: inset 0 0 0 1px black;
         height: 100%;
         padding: 10px 5px 10px 5px;
+        
     }
 
         .flex_box_right.contact {
@@ -162,8 +163,8 @@ for details on configuring this project to bundle and minify static web assets. 
 /*Desktop settings*/
 @media only screen and (min-width: 576px) {
     .row {
-        height: 14vmax;
-        width: 100vmax;
+        height: calc(14em + 0.2vw);
+        width: calc(100em + 0.2vw);
         margin: auto;
     }
 
@@ -176,7 +177,7 @@ for details on configuring this project to bundle and minify static web assets. 
         display: flex;
         width: 60%;
         justify-content: center;
-        font-size: 2.6vmax;
+        font-size: calc(3.2em + 0.1vw);
         margin: 0 -20% 0 20%;
     }
 
@@ -188,7 +189,7 @@ for details on configuring this project to bundle and minify static web assets. 
     }
 
     .layout_subheader {
-        font-size: 1.3vmax;
+        font-size: calc(1.1em + 0.1vw);
     }
 
     .layout_img {
@@ -198,7 +199,7 @@ for details on configuring this project to bundle and minify static web assets. 
     }
 
     .image-header {
-        font-size: 2vmax;
+        font-size: 1.9vmax;
     }
 
     .image-subheader {
@@ -219,7 +220,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
     .page_subheader {
         margin: auto;
-        font-size: 1.1vmax;
+        font-size: calc(1.4em + 0.1vw);
         max-width: 80%;
         padding: 30px 0px 70px 0px;
     }
@@ -227,40 +228,47 @@ for details on configuring this project to bundle and minify static web assets. 
     .page_text {
         padding-top: 10px;
         margin: auto;
-        font-size: 0.8vmax;
+        font-size: calc(1.0em + 0.1vw);
+        line-height: 1.6;
         max-width: 80%;
     }
 
+    .page_list {
+        line-height: 2.0;
+    }
+
     .display-3 {
-        font-size: 2.0vmax;
+        font-size: calc(1.6em + 0.1vw);
         font-weight: bold;
         margin: 15px 0 0 0;
+        padding: 30px 0px 50px 0px;
     }
 
     .display-4 {
-        font-size: 1.6vmax;
+        font-size: calc(1.2em + 0.1vw);
+        font-weight: bold;
         line-height: 1.6;
-        margin: 0 0 30px 0;
     }
 
     .nav-item {
-        font-size: 0.9vmax;
+        font-size: calc(1.0em + 0.1vw);
     }
 
     .text-center.bottom-nav {
-        font-size: 1.0vmax;
+        font-size: calc(1.0em + 0.1vw);
         line-height: 1.8;
         padding: 30px;
-
     }
 
     .client_quote {
-        font-size: 1.0vmax;
+        font-size: calc(0.9em + 0.1vw);
         text-align: center;
+        font-weight: bold;
     }
 
     .quote_headline {
-        font-size: 0.9vmax;
+        font-size: calc(0.9em + 0.1vw);
+        font-style:oblique;
     }
 
     .quote {
@@ -269,25 +277,27 @@ for details on configuring this project to bundle and minify static web assets. 
 
     .quote_said_by {
         font-style: normal;
+        font-weight: bold;
     }
 
     .contact_info {
-        font-size: 1.8vmax;
+        font-size: calc(1.8em + 0.1vw);
         line-height: 3.0;
     }
 
     .flex_box_right {
         flex: 0 0 33%;
         margin: 0px 0px 20px 20px;
-        box-shadow: inset 0 0 0 1px black;
         height: 100%;
         padding: 10px 10px 0px 10px;
-        background-color: lightyellow;
+        background-color: hsla(120,40%,70%,0.08);
+        box-shadow: 1px 1px 3px 1px #93c37c;
+        border-radius: 20px;
     }
 
         .flex_box_right.contact {
             flex: 0 0 50%;
-            height: 19.5vmax;
+            height: calc(25.5em + 0.1vw);
             box-shadow: none;
             background-color: transparent;
         }
@@ -299,13 +309,16 @@ for details on configuring this project to bundle and minify static web assets. 
         box-shadow: inset 0 0 0 1px black;
         height: 100%;
         padding: 10px 10px 10px 10px;
-        background-color: lightyellow;
+        background-color: hsla(120,40%,70%,0.08);
+        box-shadow: 1px 1px 3px 1px #93c37c;
+        /*box-shadow: 1px 1px 1px #93c37c, -1px -1px 10px #A9A9A9;*/
+        border-radius: 20px;
     }
 
         .flex_box_left.contact {
             margin-top: 7%;
             flex: 0 0 50%;
-            height: 19.5vmax;
+            /*height: calc(25.5em + 0.1vw);*/
             box-shadow: none;
             text-align: right;
             background-color: transparent;
@@ -317,34 +330,46 @@ for details on configuring this project to bundle and minify static web assets. 
         max-width: 130%;
     }
 
+    .flex_box_wrapper_column_full {
+        display: flex;
+        flex-flow:column;
+        height: 100%;
+        max-width: 130%;
+    }
+
     .flex_box_full {
         flex: 0 0 100%;
-        margin: auto;
+        margin: auto auto 40px auto;
         flex-grow: 1;
-        box-shadow: inset 0 0 0 1px black;
         height: 100%;
+        width: 70%;
         padding: 10px 10px 10px 10px;
-        background-color: lightyellow;
+        background-color: hsla(120,40%,70%,0.08);
+        box-shadow: 1px 1px 3px 1px #93c37c;
+        border-radius: 20px;
+        text-align:center;
     }
 
     .flex_box_left_50_percent {
         flex: 0 0 50%;
         margin: 0px 0px 0px 0px;
         flex-grow: 1;
-        box-shadow: inset 0 0 0 1px black;
         height: 100%;
         padding: 10px 10px 10px 10px;
-        background-color: lightyellow;
+        background-color: hsla(120,40%,70%,0.08);
+        box-shadow: 1px 1px 3px 1px #93c37c;
+        border-radius: 20px;
     }
 
     .flex_box_right_50_percent {
         flex: 0 0 50%;
         margin: 0px 0px 10px 10px;
         flex-grow: 1;
-        box-shadow: inset 0 0 0 1px black;
         height: 100%;
         padding: 10px 10px 10px 10px;
-        background-color: lightyellow;
+        background-color: hsla(120,40%,70%,0.08);
+        box-shadow: 1px 1px 3px 1px #93c37c;
+        border-radius: 20px;
     }
 
     .flex_box_wrapper_column_left {
@@ -446,7 +471,7 @@ for details on configuring this project to bundle and minify static web assets. 
     color: white;
     border-width: 5px;
     border-color: burlywood;
-    font-size: 1.8vw;
+    font-size: calc(1.8em + 0.1vw);
     background-size: cover;
     background-position: center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -477,11 +502,11 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .renderbody {
-    background-image: linear-gradient(lightyellow, lightcyan, powderblue, lightcyan, lightyellow);
+    background-image: linear-gradient(#E7F5CF, lightyellow, #E7F5CF, lightyellow, #E7F5CF);
 }
 
 .navbar {
-    background-image: linear-gradient(-90deg, lightcyan, lightyellow, powderblue, lightyellow, lightcyan);
+    background-image: linear-gradient(-90deg, #E7F5CF, lightyellow, #e0ffd1, lightyellow, #E7F5CF);
 }
 
 .navbar-expand-sm {

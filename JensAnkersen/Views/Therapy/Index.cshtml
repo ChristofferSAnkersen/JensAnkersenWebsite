@@ -1,21 +1,20 @@
 ﻿@model ControllerName
 @{
-    ViewData["Title"] = "Terapi samtaler";
+    ViewData["Title"] = "Samtaler";
     string controllerstring = Model.ControllerString;
 }
 
 <div class="text-center">
-    <h1 class="display-3">@ViewData["Title"]</h1>
+    <h1 class="display-3">Jeg tilbyder terapi til enkeltpersoner, til par, til familier og deres netværk</h1>
 </div>
 <body>
-    <div title="subtitle">
-        <h2 class="page_subheader text-center">
-            Jeg tilbyder terapi til enkeltpersoner, til par, til familier og deres netværk
-        </h2>
-    </div>
     <div class="flex_box_wrapper page_text">
         <div class="flex_box_left">
             <p>
+                <a class="display-4">
+                    @ViewData["Title"]
+                </a><br /><br />
+
                 Vores moderne tilværelse er kompleks og fuld af krav og forventninger. <br />
                 Alle mennesker oplever perioder med udfordringer og vanskeligheder. Det meste af det klares ved egen indsats eller ved hjælp og støtte fra familie, gode venner eller nære kolleger.<br />
                 Men nogen gange er det bare ikke nok. Man kan opleve frustration, forvirring, ulykkelighed, vrede, tomhed, depression og man føler sig kørt fast og ikke ved, hvordan man skal komme videre. Så er det en god ide at søge terapi/samtalebehandling.<br /><br />
@@ -28,6 +27,7 @@
                 Gennem samtalen vil det problem, der er baggrunden for henvendelsen, forhåbentlig blive mindre, og måske helt forsvinde ved at nye forståelser udvikles og nye ideer opstår, eller at tidligere mestringsstrategier genopdages.
                 <br /><br />
 
+                
                 •&nbsp;&nbsp;&nbsp;&nbsp;Samtalerne foregår på dine præmisser – dvs. at du afgør <b>hvad </b>der skal tales om, og hvad målet for samtalen skal være.<br /><br />
                 •&nbsp;&nbsp;&nbsp;&nbsp;Samtalerne bygger på en anerkendende tilgang, hvor jeg hjælper dig med at finde de ressourcer og styrker frem, som problemet måske har skygget for.<br /><br />
                 •&nbsp;&nbsp;&nbsp;&nbsp;Samtalerne har fokus på at bringe dig videre i livet, i den retning du ønsker.<br /><br />
@@ -37,9 +37,6 @@
         </div>
         <div class="flex_box_wrapper_column_right">
             <div class="flex_box_right">
-                @*<p class="client_quote" title="therapy_previous">
-                    <b>Tidligere kunder siger:</b><br />
-                </p>*@
                 <p class="quote_headline">
                     <b>”Jeg har lært meget om mig selv”</b>
                 </p>
@@ -48,7 +45,7 @@
                     Jeg har lært meget om mig selv. Det har hjulpet mig meget til at forstå mine følelser, mine reaktioner og det har hjulpet mig med at bede om hjælp”.
                 </p>
                 <p class="quote_said_by" title="said_by">
-                    - Katja Helmich Fraser, 6 samtaler.<br /><br />
+                    - Katja Helmich Fraser, 6 samtaler.<br />
                 </p>
             </div>
             <div class="flex_box_right">
@@ -62,7 +59,7 @@
                     Perioden, vi gik til terapi og den efterfølgende tid, var vores bedste tid sammen. Vores varmeste anbefalinger til Jens!”.
                 </p>
                 <p class="quote_said_by" title="said_by">
-                    - Sugi Thiruchelvam.<br /><br />
+                    - Sugi Thiruchelvam.<br />
                 </p>
             </div>
         </div>
