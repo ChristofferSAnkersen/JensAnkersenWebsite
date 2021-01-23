@@ -95,7 +95,7 @@ for details on configuring this project to bundle and minify static web assets. 
     .text-center .bottom-nav {
         font-size: 1.6vmax;
         line-height: 1.6;
-        padding: 10px; 
+        padding: 10px;
     }
 
     .contact_subtitle {
@@ -122,7 +122,6 @@ for details on configuring this project to bundle and minify static web assets. 
         box-shadow: inset 0 0 0 1px black;
         height: 100%;
         padding: 10px 5px 10px 5px;
-        
     }
 
         .flex_box_right.contact {
@@ -163,7 +162,7 @@ for details on configuring this project to bundle and minify static web assets. 
 /*Desktop settings*/
 @media only screen and (min-width: 576px) {
     .row {
-        height: calc(14em + 0.2vw);
+        height: calc(17em + 0.2vw);
         width: calc(100em + 0.2vw);
         margin: auto;
     }
@@ -185,7 +184,7 @@ for details on configuring this project to bundle and minify static web assets. 
         display: flex;
         width: 20%;
         justify-content: center;
-        margin:auto;
+        margin: auto;
     }
 
     .layout_subheader {
@@ -196,6 +195,7 @@ for details on configuring this project to bundle and minify static web assets. 
         width: 100%;
         height: 100%;
         background-size: cover;
+        box-shadow: 1px 1px 1px #93c37c, -1px -1px 1px #93c37c;
     }
 
     .image-header {
@@ -238,8 +238,10 @@ for details on configuring this project to bundle and minify static web assets. 
     }
 
     .display-3 {
-        font-size: calc(1.6em + 0.1vw);
-        font-weight: bold;
+        font-size: calc(2.0em + 0.1vw);
+        font-weight: unset;
+        line-height: 1.6;
+        font-style: normal;
         margin: 15px 0 0 0;
         padding: 30px 0px 50px 0px;
     }
@@ -268,7 +270,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
     .quote_headline {
         font-size: calc(0.9em + 0.1vw);
-        font-style:oblique;
+        font-style: oblique;
     }
 
     .quote {
@@ -290,15 +292,15 @@ for details on configuring this project to bundle and minify static web assets. 
         margin: 0px 0px 20px 20px;
         height: 100%;
         padding: 10px 10px 0px 10px;
-        background-color: hsla(120,40%,70%,0.08);
+        background-color: hsla(120,40%,70%,0.1);
         box-shadow: 1px 1px 3px 1px #93c37c;
         border-radius: 20px;
     }
 
         .flex_box_right.contact {
             flex: 0 0 50%;
-            height: calc(25.5em + 0.1vw);
-            box-shadow: none;
+            height: calc(26.45em + 0.1vw);
+            padding: 0px;
             background-color: transparent;
         }
 
@@ -309,7 +311,7 @@ for details on configuring this project to bundle and minify static web assets. 
         box-shadow: inset 0 0 0 1px black;
         height: 100%;
         padding: 10px 10px 10px 10px;
-        background-color: hsla(120,40%,70%,0.08);
+        background-color: hsla(120,40%,70%,0.1);
         box-shadow: 1px 1px 3px 1px #93c37c;
         /*box-shadow: 1px 1px 1px #93c37c, -1px -1px 10px #A9A9A9;*/
         border-radius: 20px;
@@ -332,7 +334,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
     .flex_box_wrapper_column_full {
         display: flex;
-        flex-flow:column;
+        flex-flow: column;
         height: 100%;
         max-width: 130%;
     }
@@ -347,7 +349,7 @@ for details on configuring this project to bundle and minify static web assets. 
         background-color: hsla(120,40%,70%,0.08);
         box-shadow: 1px 1px 3px 1px #93c37c;
         border-radius: 20px;
-        text-align:center;
+        text-align: center;
     }
 
     .flex_box_left_50_percent {
@@ -396,10 +398,12 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .google_iframe {
     display: block;
-    margin: 0 auto;
-    padding: 25px 0 40px 0;
+    margin: 30px auto;
+    padding: 0px 0px 0px 0px;
     width: 80%;
-    height: 100%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 1px #93c37c;
 }
 
 .img {
@@ -469,8 +473,9 @@ for details on configuring this project to bundle and minify static web assets. 
     height: 100%;
     width: 100%;
     color: white;
-    border-width: 5px;
-    border-color: burlywood;
+    border-width: 3px;
+    border-color: #93c37c;
+    border-radius: 20px;
     font-size: calc(1.8em + 0.1vw);
     background-size: cover;
     background-position: center;
@@ -510,8 +515,7 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .navbar-expand-sm {
-    /*background-image: linear-gradient(orange, darkorange, chocolate);*/
-    /*background-color: gol;*/
+    box-shadow: 1px 1px 1px #93c37c, -1px -1px 1px #93c37c;
 }
 
 a.navbar-brand {
@@ -545,10 +549,12 @@ html {
 
 .border-top {
     border-top: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 1px #93c37c, -1px -1px 1px #93c37c;
 }
 
 .border-bottom {
     border-bottom: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 1px #93c37c, -1px -1px 1px #93c37c;
 }
 
 .box-shadow {

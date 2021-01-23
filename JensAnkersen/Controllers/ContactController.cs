@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using JensAnkersen.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,6 +7,7 @@ namespace JensAnkersen.Controllers
 {
     public class ContactController : Controller
     {
+        [ResponseCache(Duration = 360)]
         public IActionResult Index()
         {
             // Use this to set the name of the controller to use to-top functions

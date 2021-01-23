@@ -10,6 +10,7 @@ namespace JensAnkersen.Controllers
 {
     public class TherapyController : Controller
     {
+        [ResponseCache(Duration = 360)]
         public IActionResult Index()
         {
             // Use this to set the name of the controller to use to-top functions

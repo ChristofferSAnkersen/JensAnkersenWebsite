@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using JensAnkersen.Models;
+﻿using JensAnkersen.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Diagnostics;
 
 namespace JensAnkersen.Controllers
 {
-    public class SupervisionController : Controller
+    public class AboutController : Controller
     {
         [ResponseCache(Duration = 360)]
         public IActionResult Index()

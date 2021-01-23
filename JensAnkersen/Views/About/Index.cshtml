@@ -1,0 +1,76 @@
+﻿@model ControllerName
+@{
+    ViewData["Title"] = "Om mig";
+
+    string controllerstring = "";
+    if (!String.IsNullOrWhiteSpace(Model.ControllerString))
+    {
+        controllerstring = Model.ControllerString;
+    }
+}
+
+<div class="text-center">
+    <h1 class="display-3">Om mig</h1>
+</div>
+<body>
+
+    <div class="flex_box_wrapper_column_full page_text">
+        <div class="flex_box_full">
+            <p>
+                <b class="display-4">
+                    Jeg er eksamineret Systemisk og Narrativ Psykoterapeut <br /><br />
+                </b>
+
+                Oprindelig er jeg uddannet som socialrådgiver i 1986. 
+                Siden da har jeg i en årrække arbejdet i den fynske psykiatri, dels i socialpsykiatrien dels i behandlingspsykiatrien som medarbejder og som leder. 
+                Årsskiftet 2015 -16 egen konsulentvirksomhed på fuld tid. <br /><br />
+
+                Jeg har således mange års erfaring med kontaktskabelse, samtale, rådgivning, konsulentarbejde, supervision og terapi samt undervisning i større og mindre grupper.
+            </p>
+        </div>
+        <div class="flex_box_full">
+            <p>
+                <b class="display-4">
+                    Min uddannelsesmæssige baggrund <br /><br />
+                </b>
+
+                2011: Optaget i Dansk Psykoterapeutforening MPF<br /><br />
+
+                2010: Psykoterapeut på Systemisk og Narrativ basis fra Kursus- og konsulentfirmaet WIOL.<br />
+                Uddannelse godkendt af Dansk Psykoterapeutforening.<br /><br />
+
+                2008: Certificeret Systemisk og Narrativ konsulent fra DISPUK. 3-årig tværfaglig konsulentuddannelse i samtalepraksis, behandling, supervision, konsultation og terapi.<br /><br />
+                2002: Grundlæggende lederudvikling, Fyns Amt.<br /><br />
+                2000: Den Sociale Diplomuddannelse. 1-årig tværfaglig specialuddannelse Den Sociale Højskole, Odense.<br /><br />
+                Talrige korterevarende kurser og temadage inden for psykiatri, misbrugsområdet.<br /><br />
+                1986: Socialrådgiver, Den Sociale Højskole, Odense.
+            </p>
+        </div>
+        <div class="flex_box_full">
+            <p>
+                <b class="display-4">
+                    Min arbejdsmæssige baggrund <br /><br />
+                </b>
+
+                2016: Selvstændig konsulentvirksomhed.<br /><br />
+
+                2015 - 2001: Socialfaglig medarbejder i Vista Balboa, Odense Kommune. Et integreret socialpsykiatrisk behandlingstilbud til mennesker med svær sindslidelse, omfattende rusmiddelafhængighed og behov for støtte og omsorg i hverdagen.<br />
+                Vikar for udlånt leder i år 2011 – 12.<br /><br />
+
+                2001 - 1999: Leder på Socialpsykiatrisk Botilbud, Roesskovsvej, Fyns Amt.<br /><br />
+
+                1999 - 1992: Socialrådgiver i Distriktspsykiatrisk Center, Odense Kommune.<br /><br />
+
+                1992 - 1990: Støttecenter Sprotoften, Nyborg Kommune. Botræning og støtte til at opretholde egen bolig.<br /><br />
+
+                1990 - 1987: Udslusningsboligerne i Middelfart, Fyns Amt. Behandling og optræning til at bo i mindre indgribende tilbud i primærkommunen.<br /><br />
+
+                1987 - 1986: Socialrådgivervikariat i Familieafdelingen Områdekontor Øst, Odense Kommune.
+            </p>
+        </div>
+    </div>
+</body>
+<div class="text-center bottom-nav">
+    <a class="thumbnail" asp-area="" asp-controller="@controllerstring" asp-action="Index" asp-fragment="BackToTop">Tilbage til toppen</a> |
+    <a class="thumbnail" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="BackToTop">Tilbage til forsiden</a>
+</div>
