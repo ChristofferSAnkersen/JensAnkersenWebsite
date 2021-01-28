@@ -195,7 +195,7 @@ for details on configuring this project to bundle and minify static web assets. 
         width: 100%;
         height: 100%;
         background-size: cover;
-        box-shadow: 1px 1px 1px #93c37c, -1px -1px 1px #93c37c;
+        box-shadow: 1px 1px 3px #93c37c, -1px -1px 3px #93c37c;
     }
 
     .image-header {
@@ -293,7 +293,7 @@ for details on configuring this project to bundle and minify static web assets. 
         height: 100%;
         padding: 10px 10px 0px 10px;
         background-color: hsla(120,40%,70%,0.1);
-        box-shadow: 1px 1px 3px 1px #93c37c;
+        box-shadow: 1px 1px 3px 2px #93c37c;
         border-radius: 20px;
     }
 
@@ -312,7 +312,7 @@ for details on configuring this project to bundle and minify static web assets. 
         height: 100%;
         padding: 10px 10px 10px 10px;
         background-color: hsla(120,40%,70%,0.1);
-        box-shadow: 1px 1px 3px 1px #93c37c;
+        box-shadow: 1px 1px 3px 2px #93c37c;
         /*box-shadow: 1px 1px 1px #93c37c, -1px -1px 10px #A9A9A9;*/
         border-radius: 20px;
     }
@@ -347,7 +347,7 @@ for details on configuring this project to bundle and minify static web assets. 
         width: 70%;
         padding: 10px 10px 10px 10px;
         background-color: hsla(120,40%,70%,0.08);
-        box-shadow: 1px 1px 3px 1px #93c37c;
+        box-shadow: 1px 1px 3px 2px #93c37c;
         border-radius: 20px;
         text-align: center;
     }
@@ -359,7 +359,7 @@ for details on configuring this project to bundle and minify static web assets. 
         height: 100%;
         padding: 10px 10px 10px 10px;
         background-color: hsla(120,40%,70%,0.08);
-        box-shadow: 1px 1px 3px 1px #93c37c;
+        box-shadow: 1px 1px 3px 2px #93c37c;
         border-radius: 20px;
     }
 
@@ -370,7 +370,7 @@ for details on configuring this project to bundle and minify static web assets. 
         height: 100%;
         padding: 10px 10px 10px 10px;
         background-color: hsla(120,40%,70%,0.08);
-        box-shadow: 1px 1px 3px 1px #93c37c;
+        box-shadow: 1px 1px 3px 2px #93c37c;
         border-radius: 20px;
     }
 
@@ -403,7 +403,7 @@ for details on configuring this project to bundle and minify static web assets. 
     width: 80%;
     height: 90%;
     border-radius: 20px;
-    box-shadow: 1px 1px 3px 1px #93c37c;
+    box-shadow: 1px 1px 3px 2px #93c37c;
 }
 
 .img {
@@ -515,7 +515,7 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .navbar-expand-sm {
-    box-shadow: 1px 1px 1px #93c37c, -1px -1px 1px #93c37c;
+    box-shadow: 1px 1px 3px #93c37c, -1px -1px 3px #93c37c;
 }
 
 a.navbar-brand {
@@ -549,12 +549,12 @@ html {
 
 .border-top {
     border-top: 1px solid #e5e5e5;
-    box-shadow: 1px 1px 1px #93c37c, -1px -1px 1px #93c37c;
+    box-shadow: 1px 1px 3px #93c37c, -1px -1px 3px #93c37c;
 }
 
 .border-bottom {
     border-bottom: 1px solid #e5e5e5;
-    box-shadow: 1px 1px 1px #93c37c, -1px -1px 1px #93c37c;
+    box-shadow: 1px 1px 3px #93c37c, -1px -1px 3px #93c37c;
 }
 
 .box-shadow {

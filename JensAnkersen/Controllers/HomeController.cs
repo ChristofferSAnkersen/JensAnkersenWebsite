@@ -18,7 +18,7 @@ namespace JensAnkersen.Controllers
             _logger = logger;
         }
 
-        [ResponseCache(Duration = 360)]
+        [ResponseCache(Duration = 600000)]
         public IActionResult Index()
         {
             string controllerName = this.ControllerContext.RouteData.Values["controller"].ToString();
