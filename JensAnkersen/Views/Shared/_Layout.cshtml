@@ -97,8 +97,11 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="Teaching" asp-action="Index">Undervisning</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
                             <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="About" asp-action="Index">Om Mig</a>
+                            <div class="dropdown-content">
+                                <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="Theory" asp-action="SystemiskOgNarrativ">Systemisk narrativ tilgang</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark thumbnail" asp-area="" asp-controller="Contact" asp-action="Index">Kontakt</a>

@@ -1,0 +1,41 @@
+﻿@model ControllerName
+@{
+    ViewData["Title"] = "Det systemiske og narrative - Den korte udgave";
+
+    string controllerstring = "";
+    if (!String.IsNullOrWhiteSpace(Model.ControllerString))
+    {
+        controllerstring = Model.ControllerString;
+    }
+}
+
+<div class="text-center">
+    <h1 class="display-3">Om mig</h1>
+</div>
+<body>
+
+    <div class="flex_box_wrapper_column_full page_text">
+        <div class="flex_box_full">
+            <p>
+                <b class="display-4">
+                    Det systemiske<br /><br />
+                </b>
+
+                
+            </p>
+        </div>
+        <div class="flex_box_full">
+            <p>
+                <b class="display-4">
+                    Det narrative<br /><br />
+                </b>
+
+                
+            </p>
+        </div>
+    </div>
+</body>
+<div class="text-center bottom-nav">
+    <a class="thumbnail" asp-area="" asp-controller="@controllerstring" asp-action="Index" asp-fragment="BackToTop">Tilbage til toppen</a> |
+    <a class="thumbnail" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="BackToTop">Tilbage til forsiden</a>
+</div>
