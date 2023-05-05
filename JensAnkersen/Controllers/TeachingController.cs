@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JensAnkersen.Controllers
 {
-    [ResponseCache(Duration = 600000)]
+    [ResponseCache(Duration = 3600)]
     public class TeachingController : Controller
     {
         public IActionResult Index()

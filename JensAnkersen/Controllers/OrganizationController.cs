@@ -10,7 +10,7 @@ namespace JensAnkersen.Controllers
 {
     public class OrganizationController : Controller
     {
-        [ResponseCache(Duration = 600000)]
+        [ResponseCache(Duration = 3600)]
         public IActionResult Index()
         {
             // Use this to set the name of the controller to use to-top functions
