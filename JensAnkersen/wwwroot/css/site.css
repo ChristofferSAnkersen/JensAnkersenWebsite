@@ -21,10 +21,11 @@ for details on configuring this project to bundle and minify static web assets. 
 
     .layout_header {
         display: flex;
-        width: 60%;
+        width: 100%;
         justify-content: center;
+        text-align: center;
         font-size: 3.8vmax;
-        margin: 0 -10% 0 20%;
+        /*margin: 0 -10% 0 20%;*/
     }
 
     .organization_logo {
@@ -35,13 +36,13 @@ for details on configuring this project to bundle and minify static web assets. 
     }
 
     .layout_subheader {
-        font-size: 1.6vmax;
-        white-space: pre-wrap;
+        font-size: 1.7vmax;
+        /*white-space: pre-wrap;*/
         word-break: keep-all;
     }
 
     .layout_img {
-        width: 100%;
+        width: 130%;
         height: 100%;
         background-size: cover;
     }
