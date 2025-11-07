@@ -1,7 +1,7 @@
-﻿using System;
-using System.Diagnostics;
-using JensAnkersen.Models;
+﻿using JensAnkersen.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Diagnostics;
 
 namespace JensAnkersen.Controllers
 {

@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace JensAnkersen.Models
+﻿namespace JensAnkersen.Models
 {
     public class ControllerName
     {
-        public ControllerName() 
+        public ControllerName()
         {
 
         }

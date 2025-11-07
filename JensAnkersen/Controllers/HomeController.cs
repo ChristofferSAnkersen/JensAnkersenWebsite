@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using JensAnkersen.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using JensAnkersen.Models;
+using System;
+using System.Diagnostics;
 
 namespace JensAnkersen.Controllers
 {
@@ -24,7 +21,7 @@ namespace JensAnkersen.Controllers
             string controllerName = this.ControllerContext.RouteData.Values["controller"].ToString();
             if (!String.IsNullOrWhiteSpace(controllerName))
             {
-                return View(new ControllerName() { ControllerString = controllerName }); 
+                return View(new ControllerName() { ControllerString = controllerName });
             }
             return View(new ControllerName());
         }
